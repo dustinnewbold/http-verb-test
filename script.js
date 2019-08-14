@@ -1,7 +1,8 @@
 var buttons = document.querySelectorAll('button');
-buttons.forEach(function(button) {
+for ( var i = 0; i < buttons.length; i++ ) {
+    var button = buttons[i];
     button.addEventListener('click', verbRequest);
-});
+}
 
 function verbRequest() {
     var requestURL = 'test.json';
