@@ -4,7 +4,7 @@ buttons.forEach(function(button) {
 });
 
 function verbRequest() {
-    var requestURL = '/test.json';
+    var requestURL = 'test.json';
     var button = this;
     var httpVerb = button.dataset.verb;
     var requestType = button.parentElement.dataset.type;
