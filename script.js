@@ -7,8 +7,8 @@ for ( var i = 0; i < buttons.length; i++ ) {
 function verbRequest() {
     var requestURL = 'test.json';
     var button = this;
-    var httpVerb = button.dataset.verb;
-    var requestType = button.parentElement.dataset.type;
+    var httpVerb = button.getAttribute('data-verb');
+    var requestType = button.parentElement.getAttribute('data-type');
 
     if ( ! httpVerb ) console.error('Button has no verb, weirdo');
     if ( ! requestType ) console.error('Cannot figure out request type');
